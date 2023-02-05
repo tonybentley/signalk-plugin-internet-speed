@@ -1,0 +1,32 @@
+{
+  "name": "signalk-plugin-internet-speed-test",
+  "version": "0.0.1",
+  "description": "SignalK internet speed test to delta plugin",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "jest",
+    "run:dev": "ts-node default.ts"
+  },
+  "author": "Tony Bentley",
+  "license": "ISC",
+  "keywords": [
+    "signalk-node-server-plugin",
+    "signalk-category-utility"
+  ],
+  "signalk-plugin-enabled-by-default": true,
+  "dependencies": {
+    "speedtest-net": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.4.0",
+    "@types/node": "^18.11.19",
+    "@types/speedtest-net": "^2.1.1",
+    "jest": "^29.4.1",
+    "nodemon": "^2.0.20",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.5"
+  }
+}
