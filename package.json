@@ -1,6 +1,6 @@
 {
   "name": "signalk-plugin-internet-speed",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "SignalK internet speed test to delta plugin",
   "homepage": "https://github.com/tonybentley/signalk-plugin-internet-speed/#README",
   "main": "index.js",
