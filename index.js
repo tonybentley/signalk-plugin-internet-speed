@@ -4,7 +4,7 @@
  */
 
 const main = require('./dist/main');
-const constants = require('./constants');
+const constants = require('./dist/constants');
 
 module.exports = function (app) {
   const plugin = {

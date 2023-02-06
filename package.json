@@ -1,15 +1,17 @@
 {
   "name": "signalk-plugin-internet-speed",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "description": "SignalK internet speed test to delta plugin",
+  "homepage": "https://github.com/tonybentley/signalk-plugin-internet-speed/#README",
   "main": "index.js",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "jest",
     "run:dev": "ts-node default.ts"
   },
+  "prepublish": "npm run build",
+  "license": "Apache-2.0",
   "author": "Tony Bentley",
-  "license": "ISC",
   "keywords": [
     "signalk-node-server-plugin",
     "signalk-category-utility"

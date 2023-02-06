@@ -1,1 +1,1 @@
-export const INTERVAL_MINUTES = 1; 
+export const INTERVAL_MINUTES = 10; 
