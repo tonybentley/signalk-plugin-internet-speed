@@ -1,1 +1,5 @@
 src
+jest.config.js
+tsconfig.json
+.vscode
+.eslintrc.js
