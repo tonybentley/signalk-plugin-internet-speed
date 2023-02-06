@@ -1,6 +1,5 @@
 import speedTest from 'speedtest-net';
 import { TestResult } from './TestResult.interface';
-import { ServerAPI } from 'signalk-server/lib/interfaces/plugins';
 import { INTERVAL_MINUTES } from './constants';
 
 
@@ -35,9 +34,10 @@ export const stop = () => {
  * @function main
  * @param options Options interface
  * @param app SignalK ServerAPI interface
+ * @todo defined interface for app parameter
  */
-export const main = async (options: Options = new DefaultOptions(), app: ServerAPI) => {
-  
+
+export const main = async (options: Options = new DefaultOptions(), app: any) => {
   const interval = options.interval * 60000;
   app.debug(`Interval set to every ${options.interval} minutes`)
 
