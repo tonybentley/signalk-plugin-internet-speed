@@ -3,8 +3,8 @@
  * SignalK Plugin file
  */
 
-import { main } from './dist/main';
-import { INTERVAL_MINUTES } from './constants';
+const main = require('./dist/main');
+const constants = require('./constants');
 
 module.exports = function (app) {
   const plugin = {
@@ -26,7 +26,7 @@ module.exports = function (app) {
         interval: {
           type: 'number',
           title: 'Number of minutes between speed tests',
-          default: INTERVAL_MINUTES
+          default: constants.INTERVAL_MINUTES
         }
       }
     }
