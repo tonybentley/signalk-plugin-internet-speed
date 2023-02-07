@@ -13,7 +13,6 @@ module.exports = function (app) {
     description: 'Updates the signalk delta with intenet speed',
     start: (options, restartPlugin) => {
       app.debug(options)
-      // Here we put our plugin logic
       app.debug('Plugin started');
       main.main(options, app);
     },

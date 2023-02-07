@@ -10,6 +10,13 @@
 - internet.speed.download - Speed in megabits per second
 - internet.speed.upload - Speed in megabits per second
 
+# Sytem Requirements
+
+[Speedtest.net](https://www.speedtest.net/apps/cli) client must be installed on the same computer as the SignalK Server and available as a binary command line interface. Without the CLI, the plugin will NOT WORK!
+
+After installing, check that the CLI is working by executing the command `speedtest -h` in terminal. If the help instructions are printed, then you are ready to install the plugin.
+
+
 # Installation
 
 Navigate to the SignalK Server `AppStore -> Availble` link in the left bar navigation and search for `signalk-plugin-internet-speed`. See the [plugins documentation](https://github.com/SignalK/signalk-server/blob/master/SERVERPLUGINS.md) for further information. 

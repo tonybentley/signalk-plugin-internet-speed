@@ -1,4 +1,4 @@
-import speedTest from 'speedtest-net';
+import {speedTest} from './speedtest';
 import { TestResult } from './TestResult.interface';
 import { INTERVAL_MINUTES } from './constants';
 
@@ -44,11 +44,7 @@ export const main = async (options: Options = new DefaultOptions(), app: any) =>
   const test = async () => {
     app.debug('Executing internet speed test')
     try {
-      const result: TestResult = await speedTest(
-        {
-          acceptLicense: true
-        },
-      );
+      const result: TestResult = await speedTest();
       app.debug(`Speed test results: ${JSON.stringify(result)}`)
 
       const downSpeed = (result.download.bandwidth/8) / 10000;

@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "jest",
-    "run:dev": "ts-node default.ts"
+    "run": "ts-node test.ts"
   },
   "prepublish": "npm run build",
   "license": "Apache-2.0",
@@ -18,13 +18,11 @@
   ],
   "signalk-plugin-enabled-by-default": true,
   "dependencies": {
-    "speedtest-net": "^2.2.0",
     "tslib": "^2.5.0"
   },
   "devDependencies": {
     "@types/jest": "^29.4.0",
     "@types/node": "^18.11.19",
-    "@types/speedtest-net": "^2.1.1",
     "jest": "^29.4.1",
     "ts-jest": "^29.0.5",
     "ts-node": "^10.9.1",

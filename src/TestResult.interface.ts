@@ -1,11 +1,20 @@
 declare interface Ping {
   jitter: number,
-  latency: number
+  latency: number,
+  low: number,
+  high: number,
+}
+declare interface Latency {
+  iqm: number,
+  low: number,
+  high: number,
+  jitter: number,
 }
 declare interface Load {
   bandwidth: number,
   bytes: number, 
-  elapsed: number
+  elapsed: number,
+  latency: Latency,
 }
 declare interface Interface {
   internalIp: string,
@@ -27,9 +36,11 @@ declare interface Server {
 declare interface Result {
   id: string,
   url: string
+  persisted: boolean,
 }
 
 export interface TestResult {
+  type: string,
   timestamp: Date,
   ping: Ping,
   download: Load,
